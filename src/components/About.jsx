@@ -3,26 +3,86 @@ import stackImage from '../assets/about/lokeshwaran-avatar.png';
 import { aboutContent } from '../data/portfolioData';
 
 // Tech stack SVG icons rendered inline for crisp rendering
-const JavaIcon = () => (
+// const JavaIcon = () => (
+//   <div className="flex flex-col items-center gap-2">
+//     <svg className="w-16 h-16 md:w-20 md:h-20" viewBox="0 0 128 128">
+//       <path fill="#EA2D2E" d="M47.617 98.12c-19.192 5.362 11.677 16.439 36.115 5.969-4.003-1.556-6.874-3.391-6.874-3.391-10.897 5.163-31.934 2.759-25.932-2.097 4.501-3.631 0 0-3.309-.481zM65.856 86.36c-11.756 6.392-26.996 7.086-18.907 1.186 0 0-7.915 5.163-16.747 9.202 0 0-2.31 2.259 8.003 2.981 17.168 1.199 43.879-.749 45.026-8.065 0 0 1.243-3.178-17.375-5.304z"/>
+//       <path fill="#EA2D2E" d="M83.528 71.122s5.58 5.784-6.154 10.372c-22.342 8.725-46.496.666-29.911-6.023 6.238-2.515 9.738-2.728 9.738-2.728s-3.397-2.4-11.715 2.103c-24.692 13.36 11.12 19.441 39.654 8.366 5.363-2.077 8.162-5.965 8.162-5.965-.001.001-9.774-6.125-9.774-6.125zM91.625 96.106c-.198.395-.461.781-.791 1.159 0 0 13.189-3.404 8.545-11.964-4.591-8.454-8.145-12.625 10.927-27.179 0 0-29.855 7.447-18.681 37.984z"/>
+//       <path fill="#EA2D2E" d="M76.203 0s11.752 11.752-11.146 29.835c-18.359 14.499-4.187 22.754-.005 32.198-10.7-9.662-18.555-18.159-13.29-26.074C59.003 24.494 80.823 18.793 76.203 0zM66.414 113.085c21.023 1.345 53.358-.745 54.156-10.672 0 0-1.473 3.777-17.441 6.776-18.02 3.384-40.215 2.988-53.367.819 0 .001 2.695 2.228 16.652 3.077z"/>
+//     </svg>
+//     <span className="text-xs font-bold text-white/70 uppercase tracking-wider">Java</span>
+//   </div>
+// );
+
+// const SpringBootIcon = () => (
+//   <div className="flex flex-col items-center gap-2">
+//     <svg className="w-16 h-16 md:w-20 md:h-20" viewBox="0 0 128 128">
+//       <path fill="#6DB33F" d="M116.452 6.643a59.104 59.104 0 01-6.837 12.136A64.249 64.249 0 0064.205-.026C28.984-.026 0 28.958 0 64.179c0 35.22 28.984 64.205 64.205 64.205 35.221 0 64.179-28.985 64.179-64.205 0-10.632-2.624-20.672-7.26-29.508a59.03 59.03 0 01-4.672-8.028zm-53.478 99.75c-23.407 0-42.392-18.985-42.392-42.393 0-23.407 18.985-42.392 42.392-42.392 4.016 0 7.907.563 11.591 1.607l-4.756 8.229a34.498 34.498 0 00-6.835-.683c-19.152 0-34.673 15.521-34.673 34.673 0 19.153 15.521 34.674 34.673 34.674 12.322 0 23.146-6.443 29.29-16.146l7.621 4.397c-7.966 12.614-22.043 20.984-37.911 20.034z"/>
+//       <path fill="#6DB33F" d="M96.118 56.392l-32.22 18.604-8.816-15.273 32.221-18.604z"/>
+//     </svg>
+//     {/* <span className="text-xs font-bold text-white/70 uppercase tracking-wider">Spring Boot</span> */}
+//   </div>
+// );
+const MongoDBIcon = () => (
   <div className="flex flex-col items-center gap-2">
-    <svg className="w-16 h-16 md:w-20 md:h-20" viewBox="0 0 128 128">
-      <path fill="#EA2D2E" d="M47.617 98.12c-19.192 5.362 11.677 16.439 36.115 5.969-4.003-1.556-6.874-3.391-6.874-3.391-10.897 5.163-31.934 2.759-25.932-2.097 4.501-3.631 0 0-3.309-.481zM65.856 86.36c-11.756 6.392-26.996 7.086-18.907 1.186 0 0-7.915 5.163-16.747 9.202 0 0-2.31 2.259 8.003 2.981 17.168 1.199 43.879-.749 45.026-8.065 0 0 1.243-3.178-17.375-5.304z"/>
-      <path fill="#EA2D2E" d="M83.528 71.122s5.58 5.784-6.154 10.372c-22.342 8.725-46.496.666-29.911-6.023 6.238-2.515 9.738-2.728 9.738-2.728s-3.397-2.4-11.715 2.103c-24.692 13.36 11.12 19.441 39.654 8.366 5.363-2.077 8.162-5.965 8.162-5.965-.001.001-9.774-6.125-9.774-6.125zM91.625 96.106c-.198.395-.461.781-.791 1.159 0 0 13.189-3.404 8.545-11.964-4.591-8.454-8.145-12.625 10.927-27.179 0 0-29.855 7.447-18.681 37.984z"/>
-      <path fill="#EA2D2E" d="M76.203 0s11.752 11.752-11.146 29.835c-18.359 14.499-4.187 22.754-.005 32.198-10.7-9.662-18.555-18.159-13.29-26.074C59.003 24.494 80.823 18.793 76.203 0zM66.414 113.085c21.023 1.345 53.358-.745 54.156-10.672 0 0-1.473 3.777-17.441 6.776-18.02 3.384-40.215 2.988-53.367.819 0 .001 2.695 2.228 16.652 3.077z"/>
+    <svg
+      className="w-16 h-16 md:w-20 md:h-20"
+      viewBox="0 0 128 128"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M64 4C61.5 17.5 56.5 25.5 49.5 34C41.5 43.5 35 52.5 35 66C35 84.5 46.5 99.5 61 106.5C62 107 63 107.5 64 108.5C65 107.5 66 107 67 106.5C81.5 99.5 93 84.5 93 66C93 52.5 86.5 43.5 78.5 34C71.5 25.5 66.5 17.5 64 4Z"
+        fill="#47A248"
+      />
+      <path
+        d="M64 4V108.5C65 107.5 66 107 67 106.5C81.5 99.5 93 84.5 93 66C93 52.5 86.5 43.5 78.5 34C71.5 25.5 66.5 17.5 64 4Z"
+        fill="#3F9142"
+      />
+      <path
+        d="M64 108.5C63.5 116 63.5 121 64 124"
+        stroke="#47A248"
+        strokeWidth="4"
+        strokeLinecap="round"
+      />
     </svg>
-    <span className="text-xs font-bold text-white/70 uppercase tracking-wider">Java</span>
+
+    <span className="text-xs font-bold text-white/70 uppercase tracking-wider">
+      MongoDB
+    </span>
   </div>
 );
 
-const SpringBootIcon = () => (
+const OpenAIIcon = () => (
   <div className="flex flex-col items-center gap-2">
-    <svg className="w-16 h-16 md:w-20 md:h-20" viewBox="0 0 128 128">
-      <path fill="#6DB33F" d="M116.452 6.643a59.104 59.104 0 01-6.837 12.136A64.249 64.249 0 0064.205-.026C28.984-.026 0 28.958 0 64.179c0 35.22 28.984 64.205 64.205 64.205 35.221 0 64.179-28.985 64.179-64.205 0-10.632-2.624-20.672-7.26-29.508a59.03 59.03 0 01-4.672-8.028zm-53.478 99.75c-23.407 0-42.392-18.985-42.392-42.393 0-23.407 18.985-42.392 42.392-42.392 4.016 0 7.907.563 11.591 1.607l-4.756 8.229a34.498 34.498 0 00-6.835-.683c-19.152 0-34.673 15.521-34.673 34.673 0 19.153 15.521 34.674 34.673 34.674 12.322 0 23.146-6.443 29.29-16.146l7.621 4.397c-7.966 12.614-22.043 20.984-37.911 20.034z"/>
-      <path fill="#6DB33F" d="M96.118 56.392l-32.22 18.604-8.816-15.273 32.221-18.604z"/>
+    <svg
+      className="w-16 h-16 md:w-20 md:h-20"
+      viewBox="0 0 128 128"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M92.5 51.2C92.7 48.8 92.4 46.4 91.6 44.1C88.2 34.1 77.3 28.6 67.3 31.9L62.2 33.6C60.5 30.4 57.8 27.8 54.4 26.1C44.9 21.4 33.4 25.3 28.7 34.8C27.3 37.7 26.7 40.9 26.9 44C17.8 46.4 12.2 55.7 14.6 64.8C15.4 68 17.1 70.9 19.6 73.2C15.8 81.6 19.5 91.5 27.9 95.3C30.9 96.7 34.2 97.2 37.4 96.8C40.2 105.7 49.6 110.7 58.5 107.9C61.6 107 64.3 105.2 66.4 102.8C75.2 106.5 85.4 102.5 89.1 93.7C90.4 90.5 90.7 87 89.9 83.6C98.8 80.2 103.2 70.1 99.8 61.2C98.4 57.3 95.8 53.9 92.5 51.2Z"
+        stroke="currentColor"
+        strokeWidth="7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M37 48L64 64L91 48M37 80L64 64L91 80M64 33V64M64 64V95"
+        stroke="currentColor"
+        strokeWidth="7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
-    {/* <span className="text-xs font-bold text-white/70 uppercase tracking-wider">Spring Boot</span> */}
+
+    <span className="text-xs font-bold text-white/70 uppercase tracking-wider">
+      OpenAI
+    </span>
   </div>
 );
+
 
 const MernIcon = () => (
   <div className="flex flex-col items-center gap-2">
@@ -87,12 +147,21 @@ const About = () => {
 
           {/* Horizontal Skills Row */}
           <div className="flex items-center gap-10 mt-8">
-            <div data-aos="zoom-in" data-aos-delay="300" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
-              <JavaIcon />
-            </div>
-            <div data-aos="zoom-in" data-aos-delay="450" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
-              <SpringBootIcon />
-            </div>
+            <div
+    data-aos="zoom-in"
+    data-aos-delay="300"
+    className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl"
+  >
+    <MongoDBIcon />
+  </div>
+
+  <div
+    data-aos="zoom-in"
+    data-aos-delay="450"
+    className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl"
+  >
+    <OpenAIIcon />
+  </div>
             <div data-aos="zoom-in" data-aos-delay="600" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
               <MernIcon />
             </div>
