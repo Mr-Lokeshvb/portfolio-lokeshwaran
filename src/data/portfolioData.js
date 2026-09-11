@@ -540,7 +540,7 @@ const portfolioData = {
 
   emailjsConfig: {
     publicKey: "rwsYWuMA3s-UPUdDO",
-    serviceId: "service_cotyj78",
+    serviceId: "service_l1ero7a",
     templateId: "template_asc094v",
   },
 
