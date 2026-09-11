@@ -91,7 +91,7 @@ const Contact = () => {
       <div className="relative z-10 w-full flex justify-end items-end">
         <div 
           data-aos="fade-up"
-          className="bg-[#ff2a2a] w-full md:w-[85%] lg:w-[75%] p-8 md:p-16 text-white flex flex-col justify-between"
+          className="bg-[#f16262fd] w-full md:w-[85%] lg:w-[75%] p-8 md:p-16 text-white flex flex-col justify-between"
         >
           <div className="flex flex-col sm:flex-row justify-between items-start gap-8 mb-12">
             <div className="text-xs font-bold tracking-[0.2em] uppercase opacity-90">

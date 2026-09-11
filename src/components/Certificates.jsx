@@ -23,7 +23,7 @@ const CertificateCard = ({ cert, aosDelay }) => (
 
 const Certificates = () => {
   return (
-    <section className="bg-[#EA2D2E] pt-20 pb-28 px-6 md:px-12 w-full relative overflow-hidden font-sans">
+    <section className="bg-[#f16262fd] pt-20 pb-28 px-6 md:px-12 w-full relative overflow-hidden font-sans">
       
       {/* Torn paper divider at top (transition from dark Projects section) */}
       <div className="absolute top-0 left-0 w-full pointer-events-none z-10 transform -translate-y-[1px] rotate-180">
