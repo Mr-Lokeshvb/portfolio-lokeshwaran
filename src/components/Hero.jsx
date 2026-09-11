@@ -82,7 +82,7 @@ const Hero = () => {
         </a> */}
       </div>
 
-      Content Container
+      {/* Content Container */}
       <div className="absolute inset-0 z-20 px-6 pb-20 md:pb-[8%] md:px-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-end md:justify-between items-start md:items-end text-left w-full">
         
         {/* Left Side: Text and Buttons */}
