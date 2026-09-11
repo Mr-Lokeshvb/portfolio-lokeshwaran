@@ -32,6 +32,20 @@ Looking forward to hearing from you.
 
 Best Regards,`
   );
+
+const hireMeGmail =
+  "https://mail.google.com/mail/?view=cm&fs=1" +
+  "&to=lokeshvb30000@gmail.com" +
+  "&su=" + encodeURIComponent("Hiring Inquiry – Portfolio") +
+  "&body=" + encodeURIComponent(
+    `Hello Lokeshwaran V,
+
+I came across your portfolio and would like to discuss an opportunity with you.
+
+Looking forward to hearing from you.
+
+Best Regards,`
+  );
   return (
     <nav 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -69,7 +83,7 @@ Best Regards,`
         {/* Right Side: CTA Button */}
         <div className="hidden md:block">
           <a 
-            href={hireMeMailto}
+            href={hireMeGmail}
             className="px-6 py-2.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold hover:bg-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300 backdrop-blur-md"
           >
             Hire Me
