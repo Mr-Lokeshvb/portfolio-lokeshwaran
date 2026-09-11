@@ -18,10 +18,20 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+  const navLinks = ['Home', 'About', 'Work Experience', 'Skills', 'Projects', 'Contact'];
 
-  const hireMeMailto = `mailto:mdyusufcse096@iesuniversity.ac.in?subject=Hiring Inquiry – Portfolio&body=Hello Lokeshwaran V,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,`;
+const hireMeMailto =
+  "mailto:lokeshvb30000@gmail.com" +
+  "?subject=" + encodeURIComponent("Hiring Inquiry – Portfolio") +
+  "&body=" + encodeURIComponent(
+    `Hello Lokeshwaran V,
 
+I came across your portfolio and would like to discuss an opportunity with you.
+
+Looking forward to hearing from you.
+
+Best Regards,`
+  );
   return (
     <nav 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
