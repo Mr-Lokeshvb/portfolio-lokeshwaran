@@ -38,7 +38,7 @@ const portfolioData = {
     },
     ctaResume: {
       text: "Resume",
-      href: '${import.meta.env.BASE_URL}Lokeshwaran_V_CV.pdf',
+      href: `${import.meta.env.BASE_URL}Lokeshwaran_V_CV.pdf`,
     },
   },
 
