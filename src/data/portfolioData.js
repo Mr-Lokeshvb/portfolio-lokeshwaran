@@ -167,7 +167,7 @@ const portfolioData = {
       type: "INTERNSHIP",
       title: "Software Development Intern",
       organization: "Adrasti Global Venture Builder",
-      duration: "2025-Current",
+      duration: "Dec 2024 – Sep 2025 | Dec 2025 – Present",
 
       description:
         "Contributed to full-stack web application development using the MERN stack, working across frontend interfaces, backend APIs, database integration, authentication, AI features, testing, debugging, and deployment workflows.",
